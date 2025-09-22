@@ -1,0 +1,486 @@
+    1  man man
+    2  pwd
+    3  whoami
+    4  who
+    5  w
+    6  ls
+    7  ls -l
+    8  ls -la
+    9  echo holis
+   10  echo $HOME 
+   11  mkdir clase4
+   12  ls -l
+   13  cd clase 4
+   14  ls -l
+   15  cd clase4
+   16  ls -l
+   17  cd clase4
+   18  pwd
+   19  cd $HOME
+   20  pwd
+   21  cd clase4
+   22  pwd
+   23  echo linea1
+   24  echo linea1 > archivo1.txt
+   25  ls -l
+   26  cat
+   27  pwd
+   28  w
+   29  ls -l
+   30  cat * archivo2.txt
+   31  cat -help
+   32  cat *.txt
+   33  cat >archivouno.txt
+   34  wd
+   35  pwd
+   36  ls -l
+   37  pwd
+   38  vagrant ssh
+   39  vagrant halt
+   40  wd
+   41  pwd
+   42  vagrant halt
+   43  pwd
+   44  ls -l
+   45  cd clase4
+   46  mkdir facturas pedidos
+   47  tree
+   48  sudo snap install tree
+   49  tree
+   50  mkdir -p clientes/{facturas,pedidos}
+   51  tree
+   52  mkdir -p {clientes,proveedores}/{facturas,pedidos}
+   53  tree
+   54  mkdir -p contactos/{clientes,proveedores}/{facturas,pedidos}
+   55  tree
+   56  mkdir -p fondevila/contactos/{clientes,proveedores}/{facturas,pedidos}
+   57  tree
+   58  mkdir -p fondevila2{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+   59  tree
+   60  rm -r fondevila2
+   61  rm fondevila2
+   62  tree
+   63  rm -r fondevila2{mama/hijo{1..3},papa/{hijo{1..3},ahijado}}
+   64  tree
+   65  rm -r fondevila2mama
+   66  rm -r fondevila2papa
+   67  tree
+   68  clear
+   69  whoami
+   70  id
+   71  cat /etc/passwd
+   72  grep -i vagrant /etc/passwd
+   73  cat /etc/shadow
+   74  sudo cat /etc/shadow
+   75  sudo grep vagrant /etc/shadow
+   76  cat /etc/group
+   77  grep vagrant /etc/group
+   78  sudo su 
+   79  sudo groupadd Alumnos
+   80  cat /etc/group
+   81  sudo user add -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+   82  user add -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+   83  sudouser add -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+   84  sudo user add -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+   85  sudo useradd -m -s /bin/bash -c "Usuario pepe" -G Alumnos pepe
+   86  ls -l/home
+   87  ls -l /home
+   88  sudo passwd pepe
+   89  sudo cat /etc/shadow
+   90  su pepe
+   91  ls -l/home/pepe
+   92  ls -l
+   93  su - pepe
+   94  su -p
+   95  su - pepe
+   96  sudo usermod -aG sudo pepe
+   97  su - pepe
+   98  ls -l/home/vagrant
+   99  sudo ls -l /home/vagrant
+  100  cd ..
+  101  ls -l
+  102  ls -l /home/pepe
+  103  sudo ls -l /home/pepe
+  104  sudo chown vagrant:vagrant /home/pepe/pepe.txt
+  105  sudo ls -l /home/pepe
+  106  pwd
+  107  mkdir clase5
+  108  cd clase5
+  109  ls -l
+  110  touch practica1.txt
+  111  touch practica2.txt
+  112  ls -l
+  113  chmod 600 practica 1.txt
+  114  chmod 600 practica1.txt
+  115  ls -l
+  116  chmod 444 practica2.txt
+  117  ls -l
+  118  exit
+  119  pwd
+  120  ssh-keygen -t ed25519
+  121  cat $HOME/.ssh/*.pub
+  122  ls -l .ssh/
+  123  cat .ssh/id_ed25519.pub
+  124  PWD
+  125  pwd
+  126  cd ..
+  127  pwd
+  128  ls -l
+  129  pwd
+  130  ls -l
+  131  cd vagrant
+  132  pwd
+  133  ls -l
+  134  cd repogit
+  135  pwd
+  136  ls -l
+  137  git clone git@github.com:abrilfondevila/TP1_AySO_Fondevila.git
+  138  ls -l
+  139  cd TP1_AySO_Fondevila
+  140  pwd
+  141  ls -l
+  142  os-release
+  143  cat /etc/os-release
+  144  ls -l
+  145  man grep
+  146  ls -l
+  147  cat /etc/os-release
+  148  grep HOME_URL /etc/os-release
+  149  grep home_url /etc/os-release
+  150  man grep
+  151  grep Home_url /etc/os-release
+  152  grep -i Home_url /etc/os-release
+  153  grep -i Home_url /etc/os-release > datos_url.txt
+  154  ls -l
+  155  git add
+  156  git commit
+  157  whoami
+  158  pwd
+  159  ls -l
+  160  git status
+  161  git add
+  162  git add .
+  163  git commit
+  164  pwd
+  165  ls -l
+  166  git status
+  167  git commit -m "commit datos_url.txt"
+  168  git config --global user.mail "fondevilaabril@gmail.com"
+  169  git config --global user.name "candelafondevila"
+  170  "commit repogit"
+  171  git commit -m "commit repogit"
+  172  git push
+  173  grep HOME_URL /etc/os-release 
+  174  LS -L
+  175  ls -l
+  176  ls -l 
+  177  grep HOME_URL="https://www.ubuntu.com/" Home_url /etc/os-release >
+  178  datos_url.txt
+  179  grep HOME_URL /etc/os-release
+  180  grep home_url /etc/os-release
+  181  grep -i HOME_URL="https://www.ubuntu.com/" Home_url /etc/os-release >
+  182  whoami
+  183  echo “Usuario=$(whoami)” > datos_usuario.txt
+  184  ls -l
+  185  git status
+  186  git add .
+  187  git commit -m “repogit”
+  188  git push
+  189  ls -l
+  190  grep cpuinfo
+  191  pwd
+  192  l
+  193  ls -w
+  194  pwd
+  195  ls -l
+  196  pwd
+  197  git stats
+  198  wduirhll
+  199  git haltvagrant halt
+  200  pwd
+  201  cd $HOME
+  202  cd dcdpdwwddd
+  203  pwd
+  204  pwd
+  205  rn a
+  206  vagrant halt
+  207  exit
+  208  ls -l
+  209  pwd
+  210  cd clase4
+  211  cd repogit
+  212  cd .. repogit
+  213  cd ..repogit
+  214  pwd
+  215  ls -l
+  216  cd$HOEM
+  217  cd $HOME
+  218  pwd
+  219  ls -l
+  220  cd clase5
+  221  ls -l
+  222  pwd
+  223  cd $HOME
+  224  ls -l
+  225  cd repogit
+  226  ls -l
+  227  cd TP1_AySO_Fondevila
+  228  ls -l
+  229  cat /proc/cpuinfo
+  230  tail -n1
+  231  aaagggraatttltt
+  232  vaggr     att
+  233  vxciii
+  234  vagrant hale
+  235  exit
+  236  pwd
+  237  ls -l
+  238  cd repogit
+  239  ls -l
+  240  cat /proc/cpuinfo | grep -i proce
+  241  cat /proc/cpuinfo
+  242  grep "model name" /proc/cpuinfo | head -n1 >>
+  243  datos_usuarios.txt
+  244  ls -l
+  245  cd TP1_AySO_Fondevila
+  246  ls -l
+  247  grep "model name" /proc/cpuinfo | head -n1 >>
+  248  datos_usuarios.txt
+  249  pwd
+  250  whoami
+  251  pwd
+  252  ls -l
+  253  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+  254  ls -l
+  255  grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+  256  rm datos_usuarios.txt
+  257  ls -l
+  258  cd datos_usuario.txt
+  259  pwd
+  260  ls -l
+  261  git status
+  262  git commit 
+  263  git push
+  264  git status
+  265  git add
+  266  git add .
+  267  git commit
+  268  whoami
+  269  ls -l
+  270  cd repogit
+  271  ls -l
+  272  cd TP1_AySO_Fondevila
+  273  ls -l
+  274  cat /proc/cpuinfo
+  275  grep " Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz" /proc/cpuinfo | head -n1 >>
+  276  datos_usuarios.txt
+  277  ls -l
+  278  grep " Intel(R) Core(TM) i3-1005G1 CPU @ 1.20GHz" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+  279  ls -l
+  280  git status
+  281  git add .
+  282  git commit -m "repogit"
+  283  git push
+  284  pwd
+  285  ls -l
+  286  cd $HOME
+  287  pwd
+  288  ls-l
+  289  ls -l
+  290  clear
+  291  ls -l
+  292  cat <<EOF >> README.md
+  293  Alumno: <Candela-Fondevila>
+  294  División: <113>
+  295  Turno: <Turno-matutino>
+  296  EOF
+  297  git status
+  298  pwd
+  299  ls -l
+  300  git status
+  301  cd readme.md
+  302  cat <<EOF >> README
+  303  Alumno: <Candela-Fondevila>
+  304  División: <113>
+  305  Turno: <Turno-matutino>
+  306  EOF
+  307  sudo cat <<EOF >> README Alumno: <Candela> División: <113> Turno: <Matutino> EOF 
+  308  sudo cat <<EOF >> README Alumno: <Candela> División: <"113"> Turno: <Matutino> EOF 
+  309  git status
+  310  exit
+  311  pwd
+  312  whoami
+  313  ls -l
+  314  cat <<EOF >> README.md
+  315  eit
+  316  exit
+  317  whoami
+  318  pwd
+  319  ls -l
+  320  cd repogit
+  321  ls -l
+  322  cd TP1_AySO_Fondevila
+  323  ls -l
+  324  cat <<EOF >> README.md
+  325  Alumno: <Tu-Nombre>
+  326  División: <Numero>
+  327  Turno: <Tu-Turno>
+  328  EOF
+  329  ls -l
+  330  git add README.md datos_usuarios.txt
+  331  git add README.md 
+  332  git commit -m "repogit"
+  333  git status
+  334  git add .
+  335  git commit -m "repogit"
+  336  git push
+  337  cat <<EOF >> README.md
+  338  Alumno: <CANDELA-FONDEVILA>
+  339  División: <DIVISIÓN-113>
+  340  Turno: <TURNO-MATUTINO>
+  341  EOF
+  342  git status
+  343  git add .
+  344  git commit -m "repogit"
+  345  git push
+  346  pwd
+  347  cd $HOME
+  348  pwd
+  349  ls -l
+  350  mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}
+  351  ls -l
+  352  git status
+  353  grep mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}
+  354  ls -l
+  355  cd repogit
+  356  ls -l
+  357  cd TP1_AySO_Fondevila
+  358  ls -l
+  359  git status
+  360  cd $HOME
+  361  git status
+  362  pwd
+  363  ls -l
+  364  cd materia1
+  365  ls -l
+  366  cd $HOME
+  367  tree
+  368  pwd
+  369  exit
+  370  pwd
+  371  ls -l
+  372  cd repogit
+  373  ls -l
+  374  cd TP1_AySO_Fondevila
+  375  ls -l
+  376  pwd
+  377  /home/vagrant > mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}
+  378  /home/vagrant>mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}
+  379  /home/vagrant<mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}
+  380  /home/vagrant<mkdir -p /{{materia1/uni{1..3},materia2/uni{1..3}}}
+  381  /home/vagrant<mkdir -p /{materia1/uni{1..3},materia2/uni{1..3}}
+  382  mkdir -p {materia1/uni{1..3},materia2/uni{1..3}}>/home/vagrant
+  383  git status
+  384  git add .
+  385  git commit -m "repogit"
+  386  git push
+  387  ls- l
+  388  ls -l
+  389  git push
+  390  cd $HOME
+  391  ls -l
+  392  cd repogit
+  393  ls -l
+  394  cd TP1_AySO_Fondevila
+  395  ls -l
+  396  cd mkdir
+  397  tree
+  398  tree mkdir
+  399  rm mkdir
+  400  ls -l
+  401  git status
+  402  git commit -m
+  403  git commit -m "repogit"
+  404  git push
+  405  exit
+  406  echo $HOME
+  407  /home/vagrant mkdir -p {materia1,materia2}/{uni1..3}
+  408  clear
+  409  ls -l
+  410  cd .ssh
+  411  cd ..
+  412  pwd
+  413  clear
+  414  /home/vagrant mkdir -p {materia1,materia2}/{uni1..3}
+  415  pwd
+  416  .ssh$ cat id_25519.pub
+  417  clear
+  418  pwd
+  419  ls -l
+  420  mkdir clase6
+  421  ls -l
+  422  cd clase 6
+  423  cd clase6
+  424  ls -l
+  425  touch practica.txt
+  426  ls -l
+  427  echo ls-l > script1
+  428  ls -l
+  429  cat script1
+  430  bash script1
+  431  echo ls -l > script1
+  432  pwd
+  433  ls -l
+  434  rm practica.txt
+  435  rm script1
+  436  echo ls -l > script1
+  437  ls -l
+  438  rm script1
+  439  ls -l
+  440  touch practica.txt
+  441  echo ls-l > script1
+  442  ls -l
+  443  remove script1
+  444  rm script1
+  445  echo ls -l > script1
+  446  ls -l
+  447  bash script1
+  448  vim script2.sh
+  449  ls -l
+  450  cd script2.sh
+  451  ls -l
+  452  pwd
+  453  cat sript2.sh
+  454  cat script2.sh
+  455  ./script2.sh
+  456  cd ..
+  457  pwd
+  458  ls -l
+  459  cd clase6
+  460  ls -l
+  461  cd repogit
+  462  cd ..
+  463  ls -l
+  464  cd repogit
+  465  ls -l
+  466  cd ..
+  467  ls -l
+  468  cd clase6
+  469  ls -l
+  470  ./script.sh
+  471  cat script2.sh
+  472  ./script2.sh
+  473  chmod 775 script2.sh
+  474  ls -l
+  475  cat script2.sh
+  476  ./script2.sh
+  477  pwd
+  478  ls -l
+  479  cd ..
+  480  ls -l
+  481  cd repogit
+  482  ls -l
+  483  cd TP1_AySO_Fondevila
+  484  ls -l
+  485  history
+  486  history > historial_comandos_Fondevila.txt
